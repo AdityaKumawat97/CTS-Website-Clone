@@ -168,6 +168,30 @@ ul {
         margin-inline-start: 0px;
         margin-inline-end: 0px;
     }
+    a{
+        &.button {
+            border: 1px solid $buttonGreen;
+            color: $buttonGreen;
+            display: inline-flex;
+            align-items: center;
+            vertical-align: middle;
+            margin: 0 0.5rem 1rem 0;
+            padding: 0.85em 1em !important;
+            border: 1px solid #00b140;
+            border-radius: 0;
+            transition: background-color 0.25s ease-out, color 0.25s ease-out;
+            line-height: 1;
+            text-align: center;
+            cursor: pointer;
+            font-weight: bold;
+            z-index: 999;
+            font-size: 1rem;
+            &:hover {
+                background-color: transparent;
+                color: $buttonHoverGreen;
+            }
+        }
+    }
 }
 
 /*************************padding and margin and other common styles*****************************/
@@ -240,30 +264,9 @@ ul {
 p {
     font-size: 20px;
 }
-.button {
-    border: 1px solid $buttonGreen;
-    color: $buttonGreen;
-    display: inline-flex;
-    align-items: center;
-    vertical-align: middle;
-    margin: 0 0.5rem 1rem 0;
-    padding: 0.85em 1em;
-    border: 1px solid #00b140;
-    border-radius: 0;
-    transition: background-color 0.25s ease-out, color 0.25s ease-out;
-    line-height: 1;
-    text-align: center;
-    cursor: pointer;
-    font-weight: bold;
-    z-index: 999;
-    &:hover {
-        background-color: transparent;
-        color: $buttonHoverGreen;
-    }
-}
-.small {
-    font-size: 0.75rem !important;
-}
+// .small {
+//     font-size: 0.75rem !important;
+// }
 /*************************MEDIA QUERIES*****************************/
 @media screen and (min-width: 1024px) {
     h2,

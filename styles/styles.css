@@ -185,6 +185,35 @@ ul .toggleBtn {
           margin-inline-end: 0px;
 }
 
+.section1 a.button {
+  border: 1px solid #00b140;
+  color: #00b140;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  vertical-align: middle;
+  margin: 0 0.5rem 1rem 0;
+  padding: 0.85em 1em !important;
+  border: 1px solid #00b140;
+  border-radius: 0;
+  -webkit-transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  z-index: 999;
+  font-size: 1rem;
+}
+
+.section1 a.button:hover {
+  background-color: transparent;
+  color: #078335;
+}
+
 /*************************padding and margin and other common styles*****************************/
 .large-6 {
   -webkit-box-flex: 0;
@@ -281,38 +310,6 @@ ul .toggleBtn {
 
 p {
   font-size: 20px;
-}
-
-.button {
-  border: 1px solid #00b140;
-  color: #00b140;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  vertical-align: middle;
-  margin: 0 0.5rem 1rem 0;
-  padding: 0.85em 1em;
-  border: 1px solid #00b140;
-  border-radius: 0;
-  -webkit-transition: background-color 0.25s ease-out, color 0.25s ease-out;
-  transition: background-color 0.25s ease-out, color 0.25s ease-out;
-  line-height: 1;
-  text-align: center;
-  cursor: pointer;
-  font-weight: bold;
-  z-index: 999;
-}
-
-.button:hover {
-  background-color: transparent;
-  color: #078335;
-}
-
-.small {
-  font-size: 0.75rem !important;
 }
 
 /*************************MEDIA QUERIES*****************************/
