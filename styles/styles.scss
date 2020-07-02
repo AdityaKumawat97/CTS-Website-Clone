@@ -201,28 +201,6 @@ ul {
         margin-inline-start: 0px;
         margin-inline-end: 0px;
     }
-    .carousel-progress {
-        position: relative;
-        font-size: inherit;
-        display: flex;
-        justify-content: center;
-        top: -55px;
-        li {
-            margin: 1rem;
-            button {
-                border: none;
-                cursor: pointer;
-                height: 0.5em !important;
-                width: 2.5em !important;
-                &.active {
-                    background-color: $buttonGreen;
-                }
-                &.not-active {
-                    background-color: $darkGreyColor;
-                }
-            }
-        }
-    }
 }
 a {
     &.button {
@@ -424,7 +402,16 @@ a {
             }
         }
         .fa-twitter {
-            margin-right: 2rem;
+            margin-right: 58%;
+        }
+        .fa-chevron-right {
+            cursor: pointer;
+            font-size: 116%;
+            color: $greenTextColor !important;
+            &:hover {
+                transition: color 0.25s ease-out;
+                color: $buttonHoverGreen !important;
+            }
         }
     }
     .single-img-section-10 {
@@ -509,6 +496,9 @@ a {
             width: 100%;
             height: 100%;
         }
+    }
+    .carousel-progress {
+        top: 24px !important;
     }
 }
 
@@ -768,9 +758,31 @@ p {
 .far,
 .fab {
     cursor: pointer;
+    margin-right: 2%;
     color: $textGreyLight;
 }
-
+.carousel-progress {
+    position: relative;
+    font-size: inherit;
+    display: flex;
+    justify-content: center;
+    top: -55px;
+    li {
+        margin: 1rem;
+        button {
+            border: none;
+            cursor: pointer;
+            height: 0.5em !important;
+            width: 2.5em !important;
+            &.active {
+                background-color: $buttonGreen;
+            }
+            &.not-active {
+                background-color: $darkGreyColor;
+            }
+        }
+    }
+}
 /*************************MEDIA QUERIES*****************************/
 @media screen and (min-width: 1024px) {
     h2,

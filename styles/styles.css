@@ -205,37 +205,6 @@ ul .toggleBtn {
           margin-inline-end: 0px;
 }
 
-.dummycarousel .carousel-progress {
-  position: relative;
-  font-size: inherit;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  top: -55px;
-}
-
-.dummycarousel .carousel-progress li {
-  margin: 1rem;
-}
-
-.dummycarousel .carousel-progress li button {
-  border: none;
-  cursor: pointer;
-  height: 0.5em !important;
-  width: 2.5em !important;
-}
-
-.dummycarousel .carousel-progress li button.active {
-  background-color: #00b140;
-}
-
-.dummycarousel .carousel-progress li button.not-active {
-  background-color: #918e8e;
-}
-
 a.button {
   border: 1px solid #00b140;
   color: #00b140;
@@ -459,7 +428,19 @@ a.button::after {
 }
 
 .section-10 .contact-logo .fa-twitter {
-  margin-right: 2rem;
+  margin-right: 58%;
+}
+
+.section-10 .contact-logo .fa-chevron-right {
+  cursor: pointer;
+  font-size: 116%;
+  color: #00af3f !important;
+}
+
+.section-10 .contact-logo .fa-chevron-right:hover {
+  -webkit-transition: color 0.25s ease-out;
+  transition: color 0.25s ease-out;
+  color: #078335 !important;
 }
 
 .section-10 .single-img-section-10 {
@@ -509,6 +490,10 @@ a.button::after {
 .section-10 .single-img-section-10 img {
   width: 100%;
   height: 100%;
+}
+
+.section-10 .carousel-progress {
+  top: 24px !important;
 }
 
 /*************************padding and margin and other common styles*****************************/
@@ -857,7 +842,39 @@ p {
 .far,
 .fab {
   cursor: pointer;
+  margin-right: 2%;
   color: #999 !important;
+}
+
+.carousel-progress {
+  position: relative;
+  font-size: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: -55px;
+}
+
+.carousel-progress li {
+  margin: 1rem;
+}
+
+.carousel-progress li button {
+  border: none;
+  cursor: pointer;
+  height: 0.5em !important;
+  width: 2.5em !important;
+}
+
+.carousel-progress li button.active {
+  background-color: #00b140;
+}
+
+.carousel-progress li button.not-active {
+  background-color: #918e8e;
 }
 
 /*************************MEDIA QUERIES*****************************/
