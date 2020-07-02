@@ -8,6 +8,7 @@ $buttonHoverGreen: #078335;
 $backgroundColor: #fff;
 $textBlack: #000 !important;
 $smallFont: 0.85rem !important;
+$darkGreyColor: #918e8e;
 //importing component scss's
 //Main Scss
 *::after,
@@ -16,7 +17,7 @@ $smallFont: 0.85rem !important;
 }
 body {
     // height: auto !important;
-    // width: 100% !important;
+    // width: 1081px !important;
     margin: 0;
     padding: 0;
     background: $backgroundColor;
@@ -26,7 +27,7 @@ body {
     color: #000;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    overflow: hidden;
+    overflow-x: hidden;
     a {
         text-decoration: none;
     }
@@ -104,6 +105,13 @@ body {
 }
 
 //**************************************NAVBAR*****************************************//
+.navBar {
+    position: sticky;
+    top: 0;
+    background-color: $backgroundColor;
+    width: 100%;
+    z-index: 999;
+}
 .logo {
     max-width: 220px !important;
     display: flex;
@@ -153,7 +161,7 @@ ul {
 .dummycarousel {
     height: auto;
     width: 100% !important;
-    margin-top: -3rem;
+    margin-top: -4rem;
     &::before {
         content: "\25C1";
         color: $greenTextColor;
@@ -162,6 +170,7 @@ ul {
         font-weight: 900;
         font-size: xxx-large;
         margin: 0.5em !important;
+        z-index: 0;
     }
     .section1 {
         background-image: linear-gradient(
@@ -188,50 +197,128 @@ ul {
         margin-inline-start: 0px;
         margin-inline-end: 0px;
     }
-    a {
-        &.button {
-            border: 1px solid $buttonGreen;
-            color: $buttonGreen;
-            display: inline-flex;
-            align-items: center;
-            vertical-align: middle;
-            margin: 0 0.5rem 1rem 0;
-            padding: 0.85em 1em !important;
-            border: 1px solid #00b140;
-            border-radius: 0;
-            transition: background-color 0.25s ease-out, color 0.25s ease-out;
-            line-height: 1;
-            text-align: center;
-            cursor: pointer;
-            font-weight: bold;
-            z-index: 999;
-            font-size: 1rem;
-            &:hover {
-                background-color: transparent;
-                color: $buttonHoverGreen;
-            }
-        }
-    }
     .carousel-progress {
+        position: relative;
         font-size: inherit;
+        display: flex;
+        justify-content: center;
+        top: -55px;
         li {
             margin: 1rem;
-            *button {
+            button {
                 border: none;
+                cursor: pointer;
                 height: 0.5em !important;
                 width: 2.5em !important;
                 &.active {
                     background-color: $buttonGreen;
                 }
                 &.not-active {
-                    background-color: $buttonHoverGreen;
+                    background-color: $darkGreyColor;
                 }
             }
         }
     }
 }
+a {
+    &.button {
+        border: 1px solid $buttonGreen;
+        color: $buttonGreen;
+        display: inline-flex;
+        align-items: center;
+        vertical-align: middle;
+        margin: 0 0.5rem 1rem 0;
+        padding: 0.85em 1em !important;
+        border: 1px solid #00b140;
+        border-radius: 0;
+        transition: background-color 0.25s ease-out, color 0.25s ease-out;
+        line-height: 1;
+        text-align: center;
+        cursor: pointer;
+        font-weight: bold;
+        z-index: 999;
+        font-size: 1rem;
+        &:hover {
+            background-color: transparent;
+            color: $buttonHoverGreen;
+        }
+        &::after{
+            content: '\25B7';
+            margin-left: 1rem;
+            font-size: 1.8rem;
+        }
+    }
+}
+/*************************SECTION2*****************************/
+.section-2 {
+    height: 100%;
+    width: 100%;
+    margin-left: 1%;
+    a{
+        &:hover{
+            background-color: $buttonHoverGreen !important;
+        }
+        &::after{
+            content: '\25B7';
+            margin-left: 1rem;
+            font-size: 1.8rem;
+        }
+    }
+    .column-block {
+        margin-bottom: 1rem;
+    }
+    &.container {
+        position: relative;
+        height: auto;
+        width: 100%;
+    }
+    .imgBox {
+        max-width: 100%;
+        // flex: 0 0 16.6rem;
+        img {
+            height: 18.4rem;
+            width: 16.6rem;
+            // object-fit: fill;
+        }
+    }
+}
 
 /*************************padding and margin and other common styles*****************************/
+.flex-wrap {
+    flex-wrap: wrap;
+    // flex-direction: column;
+}
+.flex-row-1 {
+    height: auto;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 50%;
+}
+.label {
+    display: inline-block !important;
+    padding: 0.4rem 0.5rem !important;
+    border-radius: 0 !important;
+    font-size: 1rem !important;
+    line-height: 1 !important;
+    white-space: nowrap !important;
+    cursor: default !important;
+    background: #0033a0 !important;
+    color: #fff !important;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.bold {
+    font-weight: bold !important;
+}
+.mb-half {
+    margin-bottom: 0.5rem;
+}
+.collapse {
+    margin-right: 0;
+    margin-left: 0;
+}
 .large-6 {
     flex: 0 0 50%;
 }
@@ -242,6 +329,13 @@ ul {
     margin-left: 2%;
     display: flex;
     flex-flow: row wrap;
+}
+
+.relative {
+    position: relative !important;
+}
+.announcements {
+    position: relative !important;
 }
 .column,
 .columns {
@@ -258,9 +352,22 @@ ul {
     padding-top: 2rem !important;
     padding-bottom: 2rem !important;
 }
+.ovpd-2 {
+    padding: 2rem !important;
+}
+.ovpd-1 {
+    padding: 1rem !important;
+}
+.pd-small {
+    padding: 1px;
+}
 
 .wd-100 {
     width: 100%;
+}
+.fill-green{
+    background-color: $buttonGreen;
+    color: white!important;
 }
 
 .align-left {
@@ -296,6 +403,9 @@ ul {
 .flex-dir-column {
     flex-direction: column;
 }
+.flex-dir-row {
+    flex-direction: row;
+}
 
 .z1 {
     z-index: 1;
@@ -309,9 +419,35 @@ ul {
     margin-top: 0;
     margin-bottom: 1rem;
 }
-
+.h5 {
+    font-size: 1.8rem !important;
+    line-height: 1.2 !important;
+    margin-top: 0 !important;
+    margin-bottom: 1rem !important;
+    color: #0033a0;
+    font-weight: bold;
+}
+.bd-1 {
+    border: 1px solid #ccc !important;
+}
 p {
     font-size: calc(13.6px + 0.625vw);
+}
+.small-order-1 {
+    order: 1;
+}
+.small-order-2 {
+    order: 2;
+}
+.small-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.medium-absolute {
+    position: absolute !important;
+}
+.medium-p1 {
+    padding: 1rem !important;
 }
 // .small {
 //     font-size: 0.75rem !important;
@@ -324,7 +460,7 @@ p {
         width: 8em;
     }
     .section1-p {
-        width: 44rem;
+        width: 46rem;
     }
 }
 @media screen and (max-width: 1024px) {
@@ -380,6 +516,17 @@ p {
     }
 }
 @media print, screen and (min-width: 40em) {
+    .medium-p1 {
+        padding: 1rem !important;
+    }
+    .medium-order-2 {
+        order: 2;
+    }
+    .medium-order-1 {
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+    }
     h2,
     .h2 {
         font-size: calc(22.2px + 3.98437vw) !important;
@@ -404,6 +551,27 @@ p {
         width: auto;
         font-size: calc(13.6px + 0.625vw) !important;
     }
+    .column-block {
+        margin-bottom: 1.5rem;
+    }
+    .row .row {
+        margin-right: -0.5rem;
+        margin-left: -0.5rem;
+    }
+    .column-block > :last-child {
+        margin-bottom: 0;
+    }
+    .medium-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+    .medium-8 {
+        flex: 0 0 66.66667% !important;
+        max-width: 66.66667% !important;
+    }
+    .medium-absolute {
+        position: absolute !important;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -421,5 +589,15 @@ p {
     .section1-p {
         width: auto;
         font-size: calc(13.6px + 0.625vw) !important;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .imgBox {
+        width: 100% !important;
+        img {
+            width: 100% !important;
+            height: 100% !important;
+        }
     }
 }
