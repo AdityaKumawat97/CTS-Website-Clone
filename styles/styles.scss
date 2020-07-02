@@ -1,5 +1,6 @@
 //declaring Variables
 $greyColor: #e6e6e6;
+$textGreyLight: #999 !important;
 $ctsBlueColor: #0033a0;
 $arrowColor: #34c167;
 $greenTextColor: #00af3f;
@@ -55,6 +56,7 @@ body {
     }
 }
 
+// ------------------------------------------------------HEADER-----------------------------------------------------//
 .menu {
     margin: 0;
     padding: 0;
@@ -157,7 +159,9 @@ ul {
         margin-right: 1rem;
     }
 }
+
 /****************************SECTION-1*************************************************/
+
 .dummycarousel {
     height: auto;
     width: 100% !important;
@@ -228,7 +232,7 @@ a {
         align-items: center;
         vertical-align: middle;
         margin: 0 0.5rem 1rem 0;
-        padding: 0.85em 1em !important;
+        padding: 0.65em 0.8em !important;
         border: 1px solid #00b140;
         border-radius: 0;
         transition: background-color 0.25s ease-out, color 0.25s ease-out;
@@ -242,24 +246,22 @@ a {
             background-color: transparent;
             color: $buttonHoverGreen;
         }
-        &::after{
-            content: '\25B7';
+        &::after {
+            content: "\25B7";
             margin-left: 1rem;
             font-size: 1.8rem;
         }
     }
 }
-/*************************SECTION2*****************************/
+/*************************************************SECTION2*************************************************/
+
 .section-2 {
     height: 100%;
     width: 100%;
     margin-left: 1%;
-    a{
-        &:hover{
-            background-color: $buttonHoverGreen !important;
-        }
-        &::after{
-            content: '\25B7';
+    a {
+        &::after {
+            content: "\25B7";
             margin-left: 1rem;
             font-size: 1.8rem;
         }
@@ -274,6 +276,8 @@ a {
     }
     .imgBox {
         max-width: 100%;
+        background-size: cover;
+        background-position: center center;
         // flex: 0 0 16.6rem;
         img {
             height: 18.4rem;
@@ -283,7 +287,139 @@ a {
     }
 }
 
+/*************************************************SECTION-3*************************************************/
+.section-3 {
+    width: 100%;
+    .single-box-1 {
+        width: 50%;
+        min-height: 100%;
+        margin-left: 1%;
+        h5 {
+            // font-size: 1.5rem !important;
+        }
+        .content {
+            height: 100%;
+        }
+        .img-area {
+            background-size: cover;
+            background-position: center center;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    .single-box-2 {
+        width: 50%;
+        min-height: 100%;
+        margin-left: 2%;
+        .content {
+            height: 100%;
+        }
+        h5 {
+            // font-size: 1.5rem !important;
+        }
+        .img-area {
+            background-size: cover;
+            background-position: center center;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}
+
+/************************************************** SECTION-4 ********************************************************/
+.section-4 {
+    margin-left: 1%;
+    a {
+        line-height: inherit;
+        color: $buttonGreen;
+        text-decoration: none;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    p {
+        margin-bottom: 1.5rem;
+    }
+    img {
+        height: 19.9rem;
+        width: 16.6rem;
+    }
+}
+
+/************************************************** SECTION-7 ********************************************************/
+.section-7 {
+    margin-left: 1%;
+    background-color: $greyColor;
+    border: none;
+    .imgBox {
+        margin-left: 6rem;
+        margin-bottom: 2rem;
+        img {
+            padding-top: 15% !important;
+        }
+    }
+    .content {
+        margin-left: 2rem;
+        margin-left: 2rem;
+        margin-top: 4rem;
+    }
+}
+
+/************************************************** SECTION-8 ********************************************************/
+
+.section-8 {
+    max-width: 100%;
+    margin-bottom: 4rem;
+    h3 {
+        font-size: 47px;
+        color: $ctsBlueColor !important;
+    }
+    .single-news {
+        padding: 1rem 1rem 1rem 1rem;
+        max-width: 28.5%;
+        height: 10.875rem;
+    }
+    .newsHead5 {
+        font-size: 27px;
+        font-weight: bold;
+        line-height: 1.2;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        color: $greenTextColor !important;
+    }
+}
+
+/************************************************** SECTION-8 ********************************************************/
+.section-9 {
+    height: auto;
+    width: 100%;
+    i {
+        width: 100px;
+        &.newspaper {
+            &::after {
+                content: "\1F4F0";
+                color: white;
+            }
+            span {
+                font-size: 3rem !important;
+            }
+            .date{
+                font-weight: 700 !important;
+            }
+        }
+    }
+    h5 {
+        font-size: calc(13.6px + 0.625vw) !important;
+    }
+}
+
 /*************************padding and margin and other common styles*****************************/
+.green-hover {
+    &:hover {
+        background-color: $buttonHoverGreen !important;
+    }
+}
 .flex-wrap {
     flex-wrap: wrap;
     // flex-direction: column;
@@ -308,12 +444,19 @@ a {
 }
 .uppercase {
     text-transform: uppercase;
+    font-style: normal !important;
 }
 .bold {
     font-weight: bold !important;
 }
 .mb-half {
     margin-bottom: 0.5rem;
+}
+.mb-one {
+    margin-bottom: 1rem;
+}
+.mb-two {
+    margin-bottom: 2rem;
 }
 .collapse {
     margin-right: 0;
@@ -352,6 +495,10 @@ a {
     padding-top: 2rem !important;
     padding-bottom: 2rem !important;
 }
+.pd-3 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
 .ovpd-2 {
     padding: 2rem !important;
 }
@@ -365,9 +512,9 @@ a {
 .wd-100 {
     width: 100%;
 }
-.fill-green{
+.fill-green {
     background-color: $buttonGreen;
-    color: white!important;
+    color: white !important;
 }
 
 .align-left {
@@ -376,6 +523,12 @@ a {
 .align-middle {
     // justify-content: center;
     align-items: center;
+}
+.align-end {
+    align-items: flex-end;
+}
+.text-center {
+    text-align: center;
 }
 .horizontal-align {
     display: flex;
@@ -389,12 +542,16 @@ a {
 .jc-spaceBetween {
     justify-content: space-between;
 }
+.jc-center {
+    justify-content: center;
+}
+.jc-flexStart {
+    justify-content: flex-start;
+}
 .disp-flex {
     display: flex;
 }
-.jc-spaceBetween {
-    justify-content: space-between;
-}
+
 .no-pd {
     padding: 0;
     margin: 0;
@@ -413,6 +570,18 @@ a {
 .text-blue {
     color: #0033a0 !important;
 }
+.text-grey {
+    color: $textGreyLight;
+}
+.text-white {
+    color: white;
+}
+.bg-blue {
+    background-color: $ctsBlueColor;
+}
+.bg-grey {
+    background-color: $greyColor;
+}
 .h2 {
     font-size: 63px;
     line-height: 1.1;
@@ -420,7 +589,7 @@ a {
     margin-bottom: 1rem;
 }
 .h5 {
-    font-size: 1.8rem !important;
+    font-size: 1.8rem;
     line-height: 1.2 !important;
     margin-top: 0 !important;
     margin-bottom: 1rem !important;
@@ -439,9 +608,24 @@ p {
 .medium-p1 {
     padding: 1rem !important;
 }
-// .small {
-//     font-size: 0.75rem !important;
-// }
+.m-top-2 {
+    margin-top: 1rem;
+}
+.margin-l1 {
+    margin-left: 1%;
+}
+.small {
+    font-size: 0.75rem !important;
+}
+
+.btn-large {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 0rem;
+    width: 17.87rem;
+    height: 2rem;
+}
+
 /*************************MEDIA QUERIES*****************************/
 @media screen and (min-width: 1024px) {
     h2,
@@ -481,6 +665,23 @@ p {
     .section1-p {
         width: 44rem;
         font-size: calc(13.6px + 0.625vw) !important;
+    }
+    .news-area {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .single-news {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    .h3 {
+        font-size: calc(19px + 2.73438vw) !important;
+    }
+    .section-8 {
+        margin-bottom: 0.2rem !important;
+    }
+    .small {
+        font-size: calc(12.6px + 0.23438vw) !important;
     }
 }
 @media print, screen and (min-width: 64em) {
@@ -554,6 +755,9 @@ p {
     .medium-absolute {
         position: absolute !important;
     }
+    .newsHead5 {
+        font-size: 1.35rem;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -568,6 +772,9 @@ p {
             margin: 0 !important;
         }
     }
+    .h5 {
+        font-size: calc(15px + 1.17188vw) !important;
+    }
     .section1-p {
         width: auto;
         font-size: calc(13.6px + 0.625vw) !important;
@@ -575,11 +782,46 @@ p {
     .container {
         flex-direction: column;
     }
+    .section-4 {
+        &.container {
+            flex-direction: column-reverse;
+        }
+    }
     .imgBox {
         width: 100% !important;
         img {
             width: 100% !important;
             height: 100% !important;
+        }
+    }
+    .section-3 {
+        flex-direction: column;
+        .single-box-1 {
+            width: 100% !important;
+            margin-bottom: 1%;
+        }
+        .single-box-2 {
+            width: 100% !important;
+            margin-left: 1% !important;
+        }
+    }
+    .section-7 {
+        padding: 4.5rem !important;
+        .imgBox {
+            margin-right: auto;
+            margin-left: auto;
+            width: 13.3rem !important;
+            height: 17.3rem !important;
+            img {
+                padding-top: 0 !important;
+                padding-top: 0 !important;
+            }
+        }
+        .content {
+            margin-left: 0 !important;
+            .label {
+                margin-top: 0 !important;
+            }
         }
     }
 }

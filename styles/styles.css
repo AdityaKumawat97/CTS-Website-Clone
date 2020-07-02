@@ -247,7 +247,7 @@ a.button {
           align-items: center;
   vertical-align: middle;
   margin: 0 0.5rem 1rem 0;
-  padding: 0.85em 1em !important;
+  padding: 0.65em 0.8em !important;
   border: 1px solid #00b140;
   border-radius: 0;
   -webkit-transition: background-color 0.25s ease-out, color 0.25s ease-out;
@@ -266,24 +266,20 @@ a.button:hover {
 }
 
 a.button::after {
-  content: '\25B7';
+  content: "\25B7";
   margin-left: 1rem;
   font-size: 1.8rem;
 }
 
-/*************************SECTION2*****************************/
+/*************************************************SECTION2*************************************************/
 .section-2 {
   height: 100%;
   width: 100%;
   margin-left: 1%;
 }
 
-.section-2 a:hover {
-  background-color: #078335 !important;
-}
-
 .section-2 a::after {
-  content: '\25B7';
+  content: "\25B7";
   margin-left: 1rem;
   font-size: 1.8rem;
 }
@@ -300,6 +296,8 @@ a.button::after {
 
 .section-2 .imgBox {
   max-width: 100%;
+  background-size: cover;
+  background-position: center center;
 }
 
 .section-2 .imgBox img {
@@ -307,7 +305,151 @@ a.button::after {
   width: 16.6rem;
 }
 
+/*************************************************SECTION-3*************************************************/
+.section-3 {
+  width: 100%;
+}
+
+.section-3 .single-box-1 {
+  width: 50%;
+  min-height: 100%;
+  margin-left: 1%;
+}
+
+.section-3 .single-box-1 .content {
+  height: 100%;
+}
+
+.section-3 .single-box-1 .img-area {
+  background-size: cover;
+  background-position: center center;
+}
+
+.section-3 .single-box-1 img {
+  width: 100%;
+}
+
+.section-3 .single-box-2 {
+  width: 50%;
+  min-height: 100%;
+  margin-left: 2%;
+}
+
+.section-3 .single-box-2 .content {
+  height: 100%;
+}
+
+.section-3 .single-box-2 .img-area {
+  background-size: cover;
+  background-position: center center;
+}
+
+.section-3 .single-box-2 img {
+  width: 100%;
+}
+
+/************************************************** SECTION-4 ********************************************************/
+.section-4 {
+  margin-left: 1%;
+}
+
+.section-4 a {
+  line-height: inherit;
+  color: #00b140;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.section-4 p {
+  margin-bottom: 1.5rem;
+}
+
+.section-4 img {
+  height: 19.9rem;
+  width: 16.6rem;
+}
+
+/************************************************** SECTION-7 ********************************************************/
+.section-7 {
+  margin-left: 1%;
+  background-color: #e6e6e6;
+  border: none;
+}
+
+.section-7 .imgBox {
+  margin-left: 6rem;
+  margin-bottom: 2rem;
+}
+
+.section-7 .imgBox img {
+  padding-top: 15% !important;
+}
+
+.section-7 .content {
+  margin-left: 2rem;
+  margin-left: 2rem;
+  margin-top: 4rem;
+}
+
+/************************************************** SECTION-8 ********************************************************/
+.section-8 {
+  max-width: 100%;
+  margin-bottom: 4rem;
+}
+
+.section-8 h3 {
+  font-size: 47px;
+  color: #0033a0 !important;
+}
+
+.section-8 .single-news {
+  padding: 1rem 1rem 1rem 1rem;
+  max-width: 28.5%;
+  height: 10.875rem;
+}
+
+.section-8 .newsHead5 {
+  font-size: 27px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #00af3f !important;
+}
+
+/************************************************** SECTION-8 ********************************************************/
+.section-9 {
+  height: auto;
+  width: 100%;
+}
+
+.section-9 i {
+  width: 100px;
+}
+
+.section-9 i.newspaper::after {
+  content: "\1F4F0";
+  color: white;
+}
+
+.section-9 i.newspaper span {
+  font-size: 3rem !important;
+}
+
+.section-9 i.newspaper .date {
+  font-weight: 700 !important;
+}
+
+.section-9 h5 {
+  font-size: calc(13.6px + 0.625vw) !important;
+}
+
 /*************************padding and margin and other common styles*****************************/
+.green-hover:hover {
+  background-color: #078335 !important;
+}
+
 .flex-wrap {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -341,6 +483,7 @@ a.button::after {
 
 .uppercase {
   text-transform: uppercase;
+  font-style: normal !important;
 }
 
 .bold {
@@ -349,6 +492,14 @@ a.button::after {
 
 .mb-half {
   margin-bottom: 0.5rem;
+}
+
+.mb-one {
+  margin-bottom: 1rem;
+}
+
+.mb-two {
+  margin-bottom: 2rem;
 }
 
 .collapse {
@@ -402,6 +553,11 @@ a.button::after {
   padding-bottom: 2rem !important;
 }
 
+.pd-3 {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+
 .ovpd-2 {
   padding: 2rem !important;
 }
@@ -435,6 +591,16 @@ a.button::after {
           align-items: center;
 }
 
+.align-end {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.text-center {
+  text-align: center;
+}
+
 .horizontal-align {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -456,16 +622,22 @@ a.button::after {
           justify-content: space-between;
 }
 
+.jc-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.jc-flexStart {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
 .disp-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.jc-spaceBetween {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .no-pd {
@@ -495,6 +667,22 @@ a.button::after {
   color: #0033a0 !important;
 }
 
+.text-grey {
+  color: #999 !important;
+}
+
+.text-white {
+  color: white;
+}
+
+.bg-blue {
+  background-color: #0033a0;
+}
+
+.bg-grey {
+  background-color: #e6e6e6;
+}
+
 .h2 {
   font-size: 63px;
   line-height: 1.1;
@@ -503,7 +691,7 @@ a.button::after {
 }
 
 .h5 {
-  font-size: 1.8rem !important;
+  font-size: 1.8rem;
   line-height: 1.2 !important;
   margin-top: 0 !important;
   margin-bottom: 1rem !important;
@@ -525,6 +713,28 @@ p {
 
 .medium-p1 {
   padding: 1rem !important;
+}
+
+.m-top-2 {
+  margin-top: 1rem;
+}
+
+.margin-l1 {
+  margin-left: 1%;
+}
+
+.small {
+  font-size: 0.75rem !important;
+}
+
+.btn-large {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 0rem;
+  width: 17.87rem;
+  height: 2rem;
 }
 
 /*************************MEDIA QUERIES*****************************/
@@ -568,6 +778,28 @@ p {
   .section1-p {
     width: 44rem;
     font-size: calc(13.6px + 0.625vw) !important;
+  }
+  .news-area {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .single-news {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  .h3 {
+    font-size: calc(19px + 2.73438vw) !important;
+  }
+  .section-8 {
+    margin-bottom: 0.2rem !important;
+  }
+  .small {
+    font-size: calc(12.6px + 0.23438vw) !important;
   }
 }
 
@@ -655,6 +887,9 @@ p {
   .medium-absolute {
     position: absolute !important;
   }
+  .newsHead5 {
+    font-size: 1.35rem;
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -667,6 +902,9 @@ p {
     font-size: xx-large;
     margin: 0 !important;
   }
+  .h5 {
+    font-size: calc(15px + 1.17188vw) !important;
+  }
   .section1-p {
     width: auto;
     font-size: calc(13.6px + 0.625vw) !important;
@@ -677,12 +915,51 @@ p {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .section-4.container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
   .imgBox {
     width: 100% !important;
   }
   .imgBox img {
     width: 100% !important;
     height: 100% !important;
+  }
+  .section-3 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-3 .single-box-1 {
+    width: 100% !important;
+    margin-bottom: 1%;
+  }
+  .section-3 .single-box-2 {
+    width: 100% !important;
+    margin-left: 1% !important;
+  }
+  .section-7 {
+    padding: 4.5rem !important;
+  }
+  .section-7 .imgBox {
+    margin-right: auto;
+    margin-left: auto;
+    width: 13.3rem !important;
+    height: 17.3rem !important;
+  }
+  .section-7 .imgBox img {
+    padding-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  .section-7 .content {
+    margin-left: 0 !important;
+  }
+  .section-7 .content .label {
+    margin-top: 0 !important;
   }
 }
 /*# sourceMappingURL=styles.css.map */
