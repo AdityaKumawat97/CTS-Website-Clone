@@ -519,25 +519,6 @@ p {
   font-size: calc(13.6px + 0.625vw);
 }
 
-.small-order-1 {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
-}
-
-.small-order-2 {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
-}
-
-.small-12 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 100%;
-          flex: 0 0 100%;
-  max-width: 100%;
-}
-
 .medium-absolute {
   position: absolute !important;
 }
@@ -622,16 +603,6 @@ p {
 @media print, screen and (min-width: 40em) {
   .medium-p1 {
     padding: 1rem !important;
-  }
-  .medium-order-2 {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-  .medium-order-1 {
-    -webkit-box-ordinal-group: 2;
-    -ms-flex-order: 1;
-    order: 1;
   }
   h2,
   .h2 {
