@@ -616,8 +616,9 @@ a.button::after {
   margin-right: 20%;
 }
 
+/************************************************** SECTION-14 ********************************************************/
 .section-14 div {
-  min-height: 10rem;
+  height: auto;
 }
 
 .section-14 ul li {
@@ -646,6 +647,7 @@ a.button::after {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: 1 / 1 / 3 / 3;
+  height: 16rem;
 }
 
 .section-14 .div2 {
@@ -654,6 +656,7 @@ a.button::after {
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
   grid-area: 1 / 3 / 3 / 5;
+  height: 16rem;
 }
 
 .section-14 .div3 {
@@ -662,6 +665,7 @@ a.button::after {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: 3 / 1 / 5 / 3;
+  height: 16rem;
 }
 
 .section-14 .div4 {
@@ -670,6 +674,7 @@ a.button::after {
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
   grid-area: 3 / 3 / 5 / 5;
+  height: 16rem;
 }
 
 .section-14 .div5 {
@@ -678,6 +683,7 @@ a.button::after {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: 5 / 1 / 7 / 3;
+  height: 16rem;
 }
 
 .section-14 .div6 {
@@ -686,6 +692,7 @@ a.button::after {
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
   grid-area: 5 / 3 / 7 / 5;
+  height: 16rem;
 }
 
 .section-14 .div7 {
@@ -694,6 +701,7 @@ a.button::after {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: 7 / 1 / 9 / 3;
+  height: 16rem;
 }
 
 .section-14 .div8 {
@@ -702,6 +710,7 @@ a.button::after {
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
   grid-area: 7 / 3 / 9 / 5;
+  height: 16rem;
 }
 
 .section-14 .div9 {
@@ -1205,6 +1214,87 @@ p {
   .hide-at-tabView {
     display: none;
   }
+  .section-14 .parent {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: (1fr)[7];
+        grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+  }
+  .section-14 .div1 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 1 / 1 / 2 / 2;
+    height: 10rem;
+  }
+  .section-14 .div2 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 1 / 2 / 2 / 3;
+    height: 10rem;
+  }
+  .section-14 .div3 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 2 / 1 / 3 / 2;
+    height: 10rem;
+  }
+  .section-14 .div4 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 2 / 2 / 3 / 3;
+    height: 10rem;
+  }
+  .section-14 .div5 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 3 / 1 / 4 / 2;
+    height: 10rem;
+  }
+  .section-14 .div6 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 3 / 2 / 4 / 3;
+    height: 10rem;
+  }
+  .section-14 .div7 {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 4 / 1 / 5 / 2;
+    height: 10rem;
+  }
+  .section-14 .div8 {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 4 / 2 / 5 / 3;
+    height: 10rem;
+  }
+  .section-14 .div9 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 4;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-area: 1 / 3 / 5 / 4;
+  }
   .toggleBtn {
     display: block !important;
     padding: 5px 5px;
@@ -1452,6 +1542,9 @@ p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .section-14 div {
+    margin-bottom: 2rem;
   }
 }
 
