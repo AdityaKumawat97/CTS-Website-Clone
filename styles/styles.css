@@ -1129,45 +1129,14 @@ p {
   .section-7 .imgBox {
     margin-left: 0 !important;
   }
+  .section-14 h6 {
+    font-size: calc(5.6px + 2.625vw) !important;
+  }
 }
 
-@media screen and (min-width: 620px) {
-  .section-14 .parent {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 0 !important;
-        grid-template-columns: 0 !important;
-    -ms-grid-rows: (1fr)[9] !important;
-        grid-template-rows: repeat(9, 1fr) !important;
-    grid-column-gap: 5px !important;
-    grid-row-gap: 5px !important;
-  }
-  .section-14 .parent .div1 {
-    grid-area: 0.25 !important;
-  }
-  .section-14 .parent .div2 {
-    grid-area: 0.33333 !important;
-  }
-  .section-14 .parent .div3 {
-    grid-area: 0.375 !important;
-  }
-  .section-14 .parent .div4 {
-    grid-area: 0.4 !important;
-  }
-  .section-14 .parent .div5 {
-    grid-area: 0.41667 !important;
-  }
-  .section-14 .parent .div6 {
-    grid-area: 0.42857 !important;
-  }
-  .section-14 .parent .div7 {
-    grid-area: 0.4375 !important;
-  }
-  .section-14 .parent .div8 {
-    grid-area: 0.44444 !important;
-  }
-  .section-14 .parent .div9 {
-    grid-area: 0.45 !important;
+@media screen and (min-width: 375px) {
+  .section-14 h6 {
+    font-size: calc(5.6px + 2.625vw) !important;
   }
 }
 
@@ -1562,10 +1531,6 @@ body i {
 .section-14 ul li {
   margin-bottom: 1%;
   line-height: 1.5;
-}
-
-.section-14 h6 {
-  font-size: calc(3.6px + 1.625vw) !important;
 }
 
 .section-14 .parent {
