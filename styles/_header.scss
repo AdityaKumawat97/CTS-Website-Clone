@@ -1,0 +1,26 @@
+// ------------------------------------------------------HEADER-----------------------------------------------------//
+.menu {
+    margin: 0;
+    padding: 0;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    background-color: $greyColor;
+    
+    li {
+        display: inline-block;
+        padding: 9px;
+        .dot {
+            height: 0.3rem;
+            width: 0.3rem;
+            border-radius: 50%;
+            display: inline-block;
+            padding: 0 !important;
+        }
+    }
+}
+
+.text-black {
+    font-size: $smallFont;
+    color: $textBlack;
+}

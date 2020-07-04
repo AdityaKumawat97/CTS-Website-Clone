@@ -1,0 +1,353 @@
+/*************************padding and margin and other common styles*****************************/
+.hr {
+    width: 88%;
+}
+.dynamic-heading {
+    font-size: calc(13.6px + 2.625vw) !important;
+}
+.newsHead5 {
+    font-size: 27px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: $greenTextColor !important;
+}
+.overlay-white {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0) 50%, white 100%);
+    display: block;
+    background-size: cover;
+    height: 75%;
+    width: 100%;
+    content: "";
+    bottom: -3px;
+}
+.carousel {
+    overflow: hidden;
+    height: 5rem;
+}
+.green-hover {
+    &:hover {
+        background-color: $buttonHoverGreen !important;
+    }
+}
+.green-text-hover {
+    &:hover {
+        color: $buttonHoverGreen !important;
+    }
+}
+.pointer {
+    cursor: pointer;
+}
+.fab,
+.far {
+    &:hover {
+        transition: color 0.25s ease-out;
+        color: $greenTextColor !important;
+    }
+}
+.fa-twitter {
+    margin-right: 50% !important;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+    // flex-direction: column;
+}
+.flex-nowrap {
+    flex-wrap: nowrap;
+}
+.flex-row-1 {
+    height: auto;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 50%;
+}
+.label {
+    display: inline-block !important;
+    padding: 0.4rem 0.5rem !important;
+    border-radius: 0 !important;
+    font-size: 1rem !important;
+    line-height: 1 !important;
+    white-space: nowrap !important;
+    cursor: default !important;
+    background: #0033a0 !important;
+    color: #fff !important;
+}
+.uppercase {
+    text-transform: uppercase;
+    font-style: normal !important;
+}
+.bold {
+    font-weight: bold !important;
+}
+.mb-half {
+    margin-bottom: 0.5rem;
+}
+.mb-one {
+    margin-bottom: 1rem;
+}
+.mb-two {
+    margin-bottom: 2rem;
+}
+.mb-large {
+    margin-bottom: 6rem;
+}
+.mt-half {
+    margin-top: 0.5rem;
+}
+.w-100 {
+    width: 100%;
+}
+.collapse {
+    margin-right: 0;
+    margin-left: 0;
+}
+.large-6 {
+    flex: 0 0 50%;
+}
+.row {
+    // max-width: 60rem;
+    // margin-right: auto;
+    max-width: 100%;
+    margin-left: 2%;
+    display: flex;
+    flex-flow: row wrap;
+}
+.pd-logo-header {
+    padding: 0 0 0 21px;
+    display: inline-block;
+    height: 17px;
+}
+
+.relative {
+    position: relative !important;
+}
+.z-0 {
+    z-index: 0 !important;
+}
+.column,
+.columns {
+    flex: 1 1 0;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    min-width: initial;
+}
+.pd-1 {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+.pd-2 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+}
+.pd-3 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+.pt-3 {
+    padding-top: 3rem;
+}
+.pb-2 {
+    padding-bottom: 2rem;
+}
+.pt-half {
+    padding-top: 0.5rem;
+}
+.ovpd-2 {
+    padding: 2rem !important;
+}
+.ovpd-1 {
+    padding: 1rem !important;
+}
+.pd-small {
+    padding: 2%;
+}
+.pd-xs {
+    padding: 0.5%;
+}
+
+.wd-100 {
+    width: 100%;
+}
+.fill-green {
+    background-color: $buttonGreen;
+    color: white !important;
+}
+
+.align-left {
+    justify-content: flex-start;
+}
+.align-middle {
+    // justify-content: center;
+    align-items: center;
+}
+.align-end {
+    align-items: flex-end;
+}
+.text-center {
+    text-align: center;
+}
+.horizontal-align {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+}
+.no-bullets {
+    list-style-type: none;
+}
+
+.jc-spaceBetween {
+    justify-content: space-between;
+}
+.jc-spaceAround {
+    justify-content: space-around;
+}
+.jc-center {
+    justify-content: center;
+}
+.jc-flexStart {
+    justify-content: flex-start;
+}
+.jc-flexEnd {
+    justify-content: flex-end;
+}
+.disp-flex {
+    display: flex;
+}
+
+.no-pd {
+    padding: 0;
+    margin: 0;
+}
+
+.flex-dir-column {
+    flex-direction: column;
+}
+.flex-dir-row {
+    flex-direction: row;
+}
+.flex-dir-row-rev {
+    flex-direction: row-reverse;
+}
+
+.z1 {
+    z-index: 1;
+}
+.text-normal {
+    font-weight: normal !important;
+}
+.text-blue {
+    color: $ctsBlueColor;
+}
+.text-grey {
+    color: $textGreyLight;
+}
+.text-white {
+    color: $simpleWhite;
+}
+.text-small {
+    font-size: 1rem;
+}
+.bg-blue {
+    background-color: $ctsBlueColor;
+}
+.bg-grey {
+    background-color: $greyColor;
+}
+.black-vertical {
+    border-left: 2px solid #000;
+    height: 5%;
+}
+.h2 {
+    font-size: 63px;
+    line-height: 1.1;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.h5 {
+    font-size: 1.8rem;
+    line-height: 1.2 !important;
+    margin-top: 0 !important;
+    margin-bottom: 1rem !important;
+    color: $ctsBlueColor;
+    font-weight: bold;
+}
+.bd-1 {
+    border: 1px solid #ccc !important;
+}
+.bd-bt-1 {
+    border-bottom: 1px #ccc solid !important;
+}
+
+p {
+    font-size: $dynamicFontSizeParagraph;
+}
+.medium-absolute {
+    position: absolute !important;
+}
+.medium-p1 {
+    padding: 1rem !important;
+}
+.m-top-2 {
+    margin-top: 1rem;
+}
+.margin-l1 {
+    margin-left: 1%;
+}
+.m-1 {
+    margin: 0.7rem;
+}
+.small {
+    font-size: 0.75rem !important;
+}
+
+.btn-large {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 0rem;
+    min-width: 17.87rem;
+    height: 2rem;
+}
+.custom-label {
+    margin-top: 5%;
+    width: 36%;
+    font-size: calc(13px + 0.2vw) !important;
+}
+
+.fab {
+    margin-left: 5%;
+}
+.far,
+.fab {
+    cursor: pointer;
+    margin-right: 2%;
+    color: $textGreyLight;
+}
+.carousel-progress {
+    position: relative;
+    font-size: inherit;
+    display: flex;
+    justify-content: center;
+    top: -55px;
+    li {
+        margin: 1rem;
+        button {
+            border: none;
+            cursor: pointer;
+            height: 0.5em !important;
+            width: 2.5em !important;
+            &.active {
+                background-color: $buttonGreen;
+            }
+            &.not-active {
+                background-color: $darkGreyColor;
+            }
+        }
+    }
+}
+.active-state {
+    text-decoration: underline;
+    color: $ctsBlueColor;
+    opacity: 0.7;
+}
