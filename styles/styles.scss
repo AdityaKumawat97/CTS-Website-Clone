@@ -3,7 +3,6 @@
 // EMP-ID: 856754
 //***********************************************************************************************************************
 
-
 //importing component scss's
 @import "./_colors";
 @import "./bodyStyle";
@@ -13,11 +12,6 @@
 @import "./staticCarousel";
 @import "./commonStyles";
 @import "./mediaQueries";
-
-
-
-
-
 
 /*************************************************SECTION2*************************************************/
 
@@ -286,15 +280,12 @@
     }
     .author-section {
         .userImage {
-            // padding: 1.5rem !important;
+            padding: 1.5rem !important;
+            width: 1.9rem;
+            height: 1.9rem;
+            font-size: 1.9rem;
             border: 1px solid $textGreyLight;
             border-radius: 50%;
-            img{
-                width: inherit;
-                height: inherit;
-                background-position: center;
-                background-size: contain;
-            }
         }
     }
 }
@@ -450,4 +441,3 @@
         grid-area: 1 / 5 / 9 / 7;
     }
 }
-
