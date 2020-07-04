@@ -1,4 +1,3 @@
-
 /*************************MEDIA QUERIES*****************************/
 @media screen and (min-width: 1024px) {
     h2,
@@ -314,7 +313,7 @@
     }
     .section-14 {
         div {
-            margin-bottom: 2rem;
+            margin-bottom: 3.6rem;
         }
     }
 }
@@ -359,7 +358,66 @@
         }
     }
 }
+@media screen and (max-width: 692px) {
+    .section-14 {
+        div {
+            margin-bottom: 3.6rem;
+        }
+    }
+}
 
+@media screen and (min-width: 320px) {
+    body {
+        // width: 100% !important;
+        // margin-left: 1% !important;
+
+        .section-1,
+        .section-2,
+        .section-3,
+        .section-4,
+        .section-5,
+        .section-6,
+        .section-7,
+        .section-8,
+        .section-9,
+        .section-10,
+        .section-11,
+        .section-12,
+        .section-13,
+        .section-14 {
+            margin-left: 0.3% !important;
+        }
+    }
+    .section-7 {
+        padding: 0 !important;
+        .imgBox {
+            margin-left: 0 !important;
+        }
+    }
+}
+
+@media screen and (min-width: 620px) {
+    .section-14{
+        .parent {
+            display: grid;
+            grid-template-columns:0!important;
+            grid-template-rows: repeat(9, 1fr)!important;
+            grid-column-gap: 5px!important;
+            grid-row-gap: 5px!important;
+            .div1 { grid-area: 1 / 1 / 2 / 2!important; }
+            .div2 { grid-area: 2 / 1 / 3 / 2!important; }
+            .div3 { grid-area: 3 / 1 / 4 / 2!important; }
+            .div4 { grid-area: 4 / 1 / 5 / 2!important; }
+            .div5 { grid-area: 5 / 1 / 6 / 2!important; }
+            .div6 { grid-area: 6 / 1 / 7 / 2!important; }
+            .div7 { grid-area: 7 / 1 / 8 / 2!important; }
+            .div8 { grid-area: 8 / 1 / 9 / 2!important; }
+            .div9 { grid-area: 9 / 1 / 10 / 2!important; }
+            }
+            
+            
+    }
+}
 body {
     i {
         font-style: normal !important;

@@ -14,6 +14,11 @@
 @import "./commonStyles";
 @import "./mediaQueries";
 
+
+
+
+
+
 /*************************************************SECTION2*************************************************/
 
 .section-2 {
@@ -281,10 +286,15 @@
     }
     .author-section {
         .userImage {
-            font-size: 1.6rem;
-            padding: 1.5rem !important;
+            // padding: 1.5rem !important;
             border: 1px solid $textGreyLight;
-            border-radius: 54%;
+            border-radius: 50%;
+            img{
+                width: inherit;
+                height: inherit;
+                background-position: center;
+                background-size: contain;
+            }
         }
     }
 }

@@ -1,4 +1,30 @@
 /*************************padding and margin and other common styles*****************************/
+
+// HOVER
+.green-hover {
+    &:hover {
+        background-color: $buttonHoverGreen !important;
+    }
+}
+.green-text-hover {
+    &:hover {
+        color: $buttonHoverGreen !important;
+    }
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+//TEXT PROPERTIES
+.uppercase {
+    text-transform: uppercase;
+    font-style: normal !important;
+}
+
+.bold {
+    font-weight: bold !important;
+}
 .hr {
     width: 88%;
 }
@@ -13,74 +39,8 @@
     margin-bottom: 1rem;
     color: $greenTextColor !important;
 }
-.overlay-white {
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0) 50%, white 100%);
-    display: block;
-    background-size: cover;
-    height: 75%;
-    width: 100%;
-    content: "";
-    bottom: -3px;
-}
-.carousel {
-    overflow: hidden;
-    height: 5rem;
-}
-.green-hover {
-    &:hover {
-        background-color: $buttonHoverGreen !important;
-    }
-}
-.green-text-hover {
-    &:hover {
-        color: $buttonHoverGreen !important;
-    }
-}
-.pointer {
-    cursor: pointer;
-}
-.fab,
-.far {
-    &:hover {
-        transition: color 0.25s ease-out;
-        color: $greenTextColor !important;
-    }
-}
-.fa-twitter {
-    margin-right: 50% !important;
-}
-.flex-wrap {
-    flex-wrap: wrap;
-    // flex-direction: column;
-}
-.flex-nowrap {
-    flex-wrap: nowrap;
-}
-.flex-row-1 {
-    height: auto;
-    display: inline-flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 50%;
-}
-.label {
-    display: inline-block !important;
-    padding: 0.4rem 0.5rem !important;
-    border-radius: 0 !important;
-    font-size: 1rem !important;
-    line-height: 1 !important;
-    white-space: nowrap !important;
-    cursor: default !important;
-    background: #0033a0 !important;
-    color: #fff !important;
-}
-.uppercase {
-    text-transform: uppercase;
-    font-style: normal !important;
-}
-.bold {
-    font-weight: bold !important;
-}
+
+// MARGINS
 .mb-half {
     margin-bottom: 0.5rem;
 }
@@ -95,6 +55,27 @@
 }
 .mt-half {
     margin-top: 0.5rem;
+}
+
+.medium-p1 {
+    padding: 1rem !important;
+}
+.m-top-2 {
+    margin-top: 1rem;
+}
+.margin-l1 {
+    margin-left: 1%;
+}
+.margin-r1 {
+    margin-right: 1%;
+}
+.m-1 {
+    margin: 0.7rem;
+}
+
+//POSITIONS
+.medium-absolute {
+    position: absolute !important;
 }
 .w-100 {
     width: 100%;
@@ -133,6 +114,12 @@
     padding-left: 0.5rem;
     min-width: initial;
 }
+
+//PADDING
+.no-pd {
+    padding: 0;
+    margin: 0;
+}
 .pd-1 {
     padding-top: 1rem !important;
     padding-bottom: 1rem !important;
@@ -166,7 +153,11 @@
 .pd-xs {
     padding: 0.5%;
 }
+p {
+    font-size: $dynamicFontSizeParagraph;
+}
 
+//COMMONs
 .wd-100 {
     width: 100%;
 }
@@ -175,11 +166,11 @@
     color: white !important;
 }
 
+//ALIGNMENT
 .align-left {
     justify-content: flex-start;
 }
 .align-middle {
-    // justify-content: center;
     align-items: center;
 }
 .align-end {
@@ -193,9 +184,13 @@
     justify-content: flex-end;
     flex-wrap: nowrap;
 }
+
+//bullet removal
 .no-bullets {
     list-style-type: none;
 }
+
+//FLEXBOX JUSTIFICATION, FLEX DIRECTION STYLES
 
 .jc-spaceBetween {
     justify-content: space-between;
@@ -216,11 +211,6 @@
     display: flex;
 }
 
-.no-pd {
-    padding: 0;
-    margin: 0;
-}
-
 .flex-dir-column {
     flex-direction: column;
 }
@@ -234,6 +224,27 @@
 .z1 {
     z-index: 1;
 }
+
+//FLEXBOX PROPERTIES
+
+.flex-wrap {
+    flex-wrap: wrap;
+    // flex-direction: column;
+}
+
+.flex-nowrap {
+    flex-wrap: nowrap;
+}
+
+.flex-row-1 {
+    height: auto;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 50%;
+}
+
+//TEXT COLOR STYLES
 .text-normal {
     font-weight: normal !important;
 }
@@ -259,6 +270,8 @@
     border-left: 2px solid #000;
     height: 5%;
 }
+
+//HEADING STYLES
 .h2 {
     font-size: 63px;
     line-height: 1.1;
@@ -273,6 +286,9 @@
     color: $ctsBlueColor;
     font-weight: bold;
 }
+
+//BORDERS
+
 .bd-1 {
     border: 1px solid #ccc !important;
 }
@@ -280,28 +296,23 @@
     border-bottom: 1px #ccc solid !important;
 }
 
-p {
-    font-size: $dynamicFontSizeParagraph;
-}
-.medium-absolute {
-    position: absolute !important;
-}
-.medium-p1 {
-    padding: 1rem !important;
-}
-.m-top-2 {
-    margin-top: 1rem;
-}
-.margin-l1 {
-    margin-left: 1%;
-}
-.m-1 {
-    margin: 0.7rem;
-}
 .small {
     font-size: 0.75rem !important;
 }
 
+//CUSTOM BUTTONS AND LABELS/LOGOS
+
+.label {
+    display: inline-block !important;
+    padding: 0.4rem 0.5rem !important;
+    border-radius: 0 !important;
+    font-size: 1rem !important;
+    line-height: 1 !important;
+    white-space: nowrap !important;
+    cursor: default !important;
+    background: #0033a0 !important;
+    color: #fff !important;
+}
 .btn-large {
     text-align: center;
     justify-content: center;
@@ -324,6 +335,24 @@ p {
     margin-right: 2%;
     color: $textGreyLight;
 }
+.fab,
+.far {
+    &:hover {
+        transition: color 0.25s ease-out;
+        color: $greenTextColor !important;
+    }
+}
+
+.fa-twitter {
+    margin-right: 50% !important;
+}
+
+//CAROUSEL PROGRESS
+.carousel {
+    overflow: hidden;
+    height: 5rem;
+}
+
 .carousel-progress {
     position: relative;
     font-size: inherit;
