@@ -288,8 +288,21 @@ a.button::after {
   margin-right: 1%;
 }
 
+.margin-l2 {
+  margin-left: 2rem;
+}
+
+.margin-r2 {
+  margin-right: 2rem;
+}
+
 .m-1 {
   margin: 0.7rem;
+}
+
+.m-auto {
+  margin-right: auto !important;
+  margin-left: auto !important;
 }
 
 .medium-absolute {
@@ -1106,7 +1119,7 @@ p {
   }
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 320px) {
   body .section-1,
   body .section-2,
   body .section-3,
@@ -1147,7 +1160,7 @@ body i {
 /*************************************************SECTION2*************************************************/
 .section-2 {
   height: 100%;
-  width: 100%;
+  max-width: 90%;
   margin-left: 1%;
 }
 
@@ -1180,13 +1193,12 @@ body i {
 
 /*************************************************SECTION-3*************************************************/
 .section-3 {
-  width: 100%;
+  max-width: 90%;
 }
 
 .section-3 .single-box-1 {
   width: 50%;
   min-height: 100%;
-  margin-left: 1%;
 }
 
 .section-3 .single-box-1 .content {
@@ -1223,7 +1235,7 @@ body i {
 
 /************************************************** SECTION-4 ********************************************************/
 .section-4 {
-  margin-left: 1%;
+  max-width: 90%;
 }
 
 .section-4 a {
@@ -1239,13 +1251,16 @@ body i {
   width: 16.6rem;
 }
 
+.section-6 {
+  max-width: 90%;
+}
+
 .section-6 .img {
   margin-right: -4rem !important;
 }
 
 /************************************************** SECTION-7 ********************************************************/
 .section-7 {
-  margin-left: 1%;
   background-color: #e6e6e6;
   border: none;
 }
@@ -1267,7 +1282,7 @@ body i {
 
 /************************************************** SECTION-8 ********************************************************/
 .section-8 {
-  max-width: 100%;
+  max-width: 90%;
   margin-bottom: 4rem;
 }
 
@@ -1390,6 +1405,7 @@ body i {
 
 /************************************************** SECTION-11 ********************************************************/
 .section-11 {
+  max-width: 90%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-flow: row-wrap;
@@ -1411,6 +1427,7 @@ body i {
 
 /************************************************** SECTION-12 ********************************************************/
 .section-12 {
+  max-width: 90%;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(245, 246, 252, 0)), color-stop(10%, rgba(217, 219, 228, 0.13)), color-stop(20%, rgba(217, 219, 228, 0.349)), color-stop(30%, rgba(217, 219, 228, 0.438)), color-stop(50%, rgba(255, 255, 255, 0.199)), to(white)), url("../assets/formbg.jpg");
   background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0) 0, rgba(217, 219, 228, 0.13) 10%, rgba(217, 219, 228, 0.349) 20%, rgba(217, 219, 228, 0.438) 30%, rgba(255, 255, 255, 0.199) 50%, white 100%), url("../assets/formbg.jpg");
   background-size: cover;
@@ -1524,6 +1541,10 @@ body i {
 }
 
 /************************************************** SECTION-14 ********************************************************/
+.section-14 {
+  max-width: 90%;
+}
+
 .section-14 div {
   height: auto;
 }
