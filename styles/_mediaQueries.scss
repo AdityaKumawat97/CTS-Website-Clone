@@ -26,7 +26,7 @@
         font-size: calc(19px + 2.73438vw) !important;
     }
     .h5 {
-        font-size: calc(15px + 1.17188vw) !important;
+        font-size: calc(12px + 1.17188vw) !important;
     }
     .section-0 {
         .header {
@@ -186,7 +186,7 @@
         font-size: $dynamicFontSizeParagraph;
     }
     .h5 {
-        font-size: calc(15px + 1.17188vw) !important;
+        font-size: calc(12px + 1.17188vw) !important;
     }
 }
 @media print, screen and (min-width: 40em) {
@@ -195,7 +195,7 @@
     }
     h2,
     .h2 {
-        font-size: calc(22.2px + 3.98437vw) !important;
+        font-size: calc(20.2px + 3.98437vw) !important;
     }
     .column,
     .columns {
@@ -256,7 +256,7 @@
         }
     }
     .h5 {
-        font-size: calc(15px + 1.17188vw) !important;
+        font-size: calc(12px + 1.17188vw) !important;
     }
     .section1-p {
         width: auto;
@@ -365,43 +365,12 @@
     }
 }
 
-@media screen and (max-width: 320px) {
-    // body {
-    //     width: 105% !important;
-    //     // margin-left: 1% !important;
-
-    //     .section-1,
-    //     .section-2,
-    //     .section-3,
-    //     .section-4,
-    //     .section-5,
-    //     .section-6,
-    //     .section-7,
-    //     .section-8,
-    //     .section-9,
-    //     .section-10,
-    //     .section-11,
-    //     .section-12,
-    //     .section-13,
-    //     .section-14 {
-    //         margin-left: 0.3% !important;
-    //     }
-    // }
-    // .section-7 {
-    //     padding: 0 !important;
-    //     .imgBox {
-    //         margin-left: 0 !important;
-    //     }
-    // }
-    // .section-14 {
-    //     h6 {
-    //         font-size: calc(5.6px + 2.625vw) !important;
-    //     }
-    // }
-}
 @media screen and (max-width: 375px) {
     body {
         width: 100% !important;
+    }
+    .pl-5{
+        padding-left: 1rem !important;
     }
 }
 @media screen and (max-width: 411px) {

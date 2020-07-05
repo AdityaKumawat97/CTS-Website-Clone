@@ -364,6 +364,10 @@ a.button::after {
   margin: 0;
 }
 
+.pl-5 {
+  padding-left: 5rem !important;
+}
+
 .pd-1 {
   padding-top: 1rem !important;
   padding-bottom: 1rem !important;
@@ -638,14 +642,14 @@ p {
 .fab {
   cursor: pointer;
   margin-right: 2%;
-  color: #999 !important;
+  color: #00af3f;
 }
 
 .fab:hover,
 .far:hover {
   -webkit-transition: color 0.25s ease-out;
   transition: color 0.25s ease-out;
-  color: #00af3f !important;
+  color: #078335 !important;
 }
 
 .fa-twitter {
@@ -717,7 +721,7 @@ p {
     font-size: calc(19px + 2.73438vw) !important;
   }
   .h5 {
-    font-size: calc(15px + 1.17188vw) !important;
+    font-size: calc(12px + 1.17188vw) !important;
   }
   .section-0 .header {
     display: none;
@@ -919,7 +923,7 @@ p {
     font-size: calc(13.6px + 0.625vw) !important;
   }
   .h5 {
-    font-size: calc(15px + 1.17188vw) !important;
+    font-size: calc(12px + 1.17188vw) !important;
   }
 }
 
@@ -929,7 +933,7 @@ p {
   }
   h2,
   .h2 {
-    font-size: calc(22.2px + 3.98437vw) !important;
+    font-size: calc(20.2px + 3.98437vw) !important;
   }
   .column,
   .columns {
@@ -993,7 +997,7 @@ p {
     margin: 0 !important;
   }
   .h5 {
-    font-size: calc(15px + 1.17188vw) !important;
+    font-size: calc(12px + 1.17188vw) !important;
   }
   .section1-p {
     width: auto;
@@ -1121,6 +1125,9 @@ p {
   body {
     width: 100% !important;
   }
+  .pl-5 {
+    padding-left: 1rem !important;
+  }
 }
 
 @media screen and (max-width: 411px) {
@@ -1159,7 +1166,7 @@ body i {
 /*************************************************SECTION2*************************************************/
 .section-2 {
   height: 100%;
-  max-width: 90%;
+  max-width: 95%;
   margin-left: 1%;
 }
 
@@ -1192,7 +1199,7 @@ body i {
 
 /*************************************************SECTION-3*************************************************/
 .section-3 {
-  max-width: 90%;
+  max-width: 95%;
 }
 
 .section-3 .single-box-1 {
@@ -1234,7 +1241,7 @@ body i {
 
 /************************************************** SECTION-4 ********************************************************/
 .section-4 {
-  max-width: 90%;
+  max-width: 95%;
 }
 
 .section-4 a {
@@ -1277,12 +1284,12 @@ body i {
 .section-7 .content {
   margin-left: 2rem;
   margin-left: 2rem;
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 /************************************************** SECTION-8 ********************************************************/
 .section-8 {
-  max-width: 90%;
+  max-width: 95%;
   margin-bottom: 4rem;
 }
 
@@ -1405,7 +1412,7 @@ body i {
 
 /************************************************** SECTION-11 ********************************************************/
 .section-11 {
-  max-width: 90%;
+  max-width: 95%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-flow: row-wrap;
@@ -1427,7 +1434,7 @@ body i {
 
 /************************************************** SECTION-12 ********************************************************/
 .section-12 {
-  max-width: 90%;
+  max-width: 95%;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(245, 246, 252, 0)), color-stop(10%, rgba(255, 255, 255, 0.616)), color-stop(20%, rgba(217, 219, 228, 0.753)), color-stop(30%, rgba(217, 219, 228, 0.808)), color-stop(50%, white), to(white)), url("../assets/formbg.jpg");
   background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0) 0, rgba(255, 255, 255, 0.616) 10%, rgba(217, 219, 228, 0.753) 20%, rgba(217, 219, 228, 0.808) 30%, white 50%, white 100%), url("../assets/formbg.jpg");
   background-size: cover;
@@ -1542,7 +1549,7 @@ body i {
 
 /************************************************** SECTION-14 ********************************************************/
 .section-14 {
-  max-width: 90%;
+  max-width: 95%;
 }
 
 .section-14 div {

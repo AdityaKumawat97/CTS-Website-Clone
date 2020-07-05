@@ -79,9 +79,9 @@
     margin: 0.7rem;
 }
 
-.m-auto{
-    margin-right: auto!important;
-    margin-left: auto!important;
+.m-auto {
+    margin-right: auto !important;
+    margin-left: auto !important;
 }
 
 //POSITIONS
@@ -130,6 +130,9 @@
 .no-pd {
     padding: 0;
     margin: 0;
+}
+.pl-5 {
+    padding-left: 5rem !important;
 }
 .pd-1 {
     padding-top: 1rem !important;
@@ -344,13 +347,13 @@ p {
 .fab {
     cursor: pointer;
     margin-right: 2%;
-    color: $textGreyLight;
+    color: $greenTextColor;
 }
 .fab,
 .far {
     &:hover {
         transition: color 0.25s ease-out;
-        color: $greenTextColor !important;
+        color: $buttonHoverGreen !important;
     }
 }
 
