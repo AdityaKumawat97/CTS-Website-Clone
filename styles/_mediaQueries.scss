@@ -215,7 +215,6 @@
         font-size: 3.15rem;
     }
     .section1-p {
-        width: auto;
         font-size: $dynamicFontSizeParagraph;
     }
     .column-block {
@@ -286,7 +285,7 @@
         }
         .single-box-2 {
             width: 100% !important;
-            margin-left: 1% !important;
+            margin-left: 0% !important;
         }
     }
     .section-7 {
@@ -367,47 +366,80 @@
 }
 
 @media screen and (max-width: 320px) {
-    body {
-        // width: 100% !important;
-        // margin-left: 1% !important;
+    // body {
+    //     width: 105% !important;
+    //     // margin-left: 1% !important;
 
-        .section-1,
-        .section-2,
-        .section-3,
-        .section-4,
-        .section-5,
-        .section-6,
-        .section-7,
-        .section-8,
-        .section-9,
-        .section-10,
-        .section-11,
-        .section-12,
-        .section-13,
-        .section-14 {
-            margin-left: 0.3% !important;
+    //     .section-1,
+    //     .section-2,
+    //     .section-3,
+    //     .section-4,
+    //     .section-5,
+    //     .section-6,
+    //     .section-7,
+    //     .section-8,
+    //     .section-9,
+    //     .section-10,
+    //     .section-11,
+    //     .section-12,
+    //     .section-13,
+    //     .section-14 {
+    //         margin-left: 0.3% !important;
+    //     }
+    // }
+    // .section-7 {
+    //     padding: 0 !important;
+    //     .imgBox {
+    //         margin-left: 0 !important;
+    //     }
+    // }
+    // .section-14 {
+    //     h6 {
+    //         font-size: calc(5.6px + 2.625vw) !important;
+    //     }
+    // }
+}
+@media screen and (max-width: 375px) {
+    body {
+        width: 100% !important;
+    }
+}
+@media screen and (max-width: 411px) {
+    body {
+        width: 102%;
+    }
+    .navBar {
+        .main-logo {
+            padding-left: 0.5rem !important;
+        }
+    }
+    .dummycarousel {
+        &::before {
+            content: "";
         }
     }
     .section-7 {
         padding: 0 !important;
         .imgBox {
-            margin-left: 0 !important;
+            img {
+                padding: 0 !important;
+                padding-top: 23% !important;
+            }
+        }
+    }
+    .section-9{
+        h5{
+            font-size: calc(10.6px + 0.625vw) !important;;
         }
     }
     .section-14 {
+        margin-left: 0!important;
+        padding: 0.7rem!important;
         h6 {
             font-size: calc(5.6px + 2.625vw) !important;
         }
     }
 }
-@media screen and (min-width: 375px) {
-    .section-14 {
-        h6 {
-            font-size: calc(5.6px + 2.625vw) !important;
-        }
-    }
-}
-
 body {
     i {
         font-style: normal !important;
