@@ -353,6 +353,11 @@
         }
     }
 }
+@media screen and (max-width: 768px) {
+    body{
+        width: 105%;
+    }
+}
 @media screen and (max-width: 1124px) {
     .single-img-section-10 {
         width: 20.3rem !important;

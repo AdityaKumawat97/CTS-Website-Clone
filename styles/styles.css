@@ -142,6 +142,17 @@ ul .toggleBtn {
   margin-top: -4rem;
 }
 
+.dummycarousel::before {
+  content: "\25C1";
+  color: #00af3f;
+  position: relative;
+  top: 7em;
+  font-weight: 900;
+  font-size: xxx-large;
+  margin: 0.5em !important;
+  z-index: 0;
+}
+
 .dummycarousel .section1 {
   background-image: -webkit-gradient(linear, right top, left top, color-stop(0, rgba(245, 246, 252, 0)), color-stop(35%, rgba(217, 219, 228, 0.774)), color-stop(50%, rgba(255, 255, 255, 0.863)), to(white)), url("../assets/imgo.jpg");
   background-image: linear-gradient(to left, rgba(245, 246, 252, 0) 0, rgba(217, 219, 228, 0.774) 35%, rgba(255, 255, 255, 0.863) 50%, white 100%), url("../assets/imgo.jpg");
@@ -1108,6 +1119,12 @@ p {
   }
   .section-14 div {
     margin-bottom: 3.6rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    width: 105%;
   }
 }
 

@@ -4,6 +4,17 @@
     height: auto;
     width: 100% !important;
     margin-top: -4rem;
+    &::before {
+        content: "\25C1";
+        color: $greenTextColor;
+        position: relative;
+        top: 7em;
+        font-weight: 900;
+        font-size: xxx-large;
+        margin: 0.5em !important;
+        z-index: 0;
+    }
+
     .section1 {
         background-image: linear-gradient(
                 to left,
