@@ -242,8 +242,45 @@
         font-size: 1.35rem;
     }
 }
-
+@media screen and (max-width: 937px) {
+    .section-13 {
+        .finale {
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            .ul-2 {
+                width: auto;
+            }
+        }
+    }
+}
+@media screen and (max-width: 630px) {
+    .section-13 {
+        .ul-2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    .section-14 {
+        .parent {
+            display: flex !important;
+            flex-direction: column !important;
+            >div{
+                height: auto !important;
+                margin-bottom: 0!important;
+            }
+        }
+    }
+}
 @media screen and (max-width: 640px) {
+    body {
+        width: 98%;
+    }
     .dummycarousel {
         &::before {
             content: "\25C1";
@@ -369,7 +406,7 @@
     body {
         width: 100% !important;
     }
-    .pl-5{
+    .pl-5 {
         padding-left: 1rem !important;
     }
 }
@@ -396,19 +433,19 @@
             }
         }
     }
-    .section-9{
-        h5{
-            font-size: calc(10.6px + 0.625vw) !important;;
+    .section-9 {
+        h5 {
+            font-size: calc(10.6px + 0.625vw) !important;
         }
     }
     .section-14 {
-        margin-left: 0!important;
-        padding: 0.7rem!important;
+        margin-left: 0 !important;
+        padding: 0.7rem !important;
         h6 {
             font-size: calc(5.6px + 2.625vw) !important;
         }
     }
-        .pl-5{
+    .pl-5 {
         padding-left: 0 !important;
     }
 }

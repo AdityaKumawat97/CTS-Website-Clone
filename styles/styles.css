@@ -142,17 +142,6 @@ ul .toggleBtn {
   margin-top: -4rem;
 }
 
-.dummycarousel::before {
-  content: "\25C1";
-  color: #00af3f;
-  position: relative;
-  top: 7em;
-  font-weight: 900;
-  font-size: xxx-large;
-  margin: 0.5em !important;
-  z-index: 0;
-}
-
 .dummycarousel .section1 {
   background-image: -webkit-gradient(linear, right top, left top, color-stop(0, rgba(245, 246, 252, 0)), color-stop(35%, rgba(217, 219, 228, 0.774)), color-stop(50%, rgba(255, 255, 255, 0.863)), to(white)), url("../assets/imgo.jpg");
   background-image: linear-gradient(to left, rgba(245, 246, 252, 0) 0, rgba(217, 219, 228, 0.774) 35%, rgba(255, 255, 255, 0.863) 50%, white 100%), url("../assets/imgo.jpg");
@@ -986,7 +975,64 @@ p {
   }
 }
 
+@media screen and (max-width: 937px) {
+  .section-13 .finale {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section-13 .finale .ul-2 {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .section-13 .ul-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section-14 .parent {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .section-14 .parent > div {
+    height: auto !important;
+    margin-bottom: 0 !important;
+  }
+}
+
 @media screen and (max-width: 640px) {
+  body {
+    width: 98%;
+  }
   .dummycarousel::before {
     content: "\25C1";
     color: #00af3f;
@@ -1537,6 +1583,10 @@ body i {
   width: 100%;
 }
 
+.section-13 .ul-1 {
+  width: 18rem;
+}
+
 .section-13 ul li i {
   font-size: 2rem;
   padding: 5%;
@@ -1544,10 +1594,6 @@ body i {
 
 .section-13 ul li a {
   font-size: 2rem;
-}
-
-.section-13 ul li.youtube {
-  margin-right: 20%;
 }
 
 /************************************************** SECTION-14 ********************************************************/
